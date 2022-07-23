@@ -1,0 +1,266 @@
+.container {
+    max-width: 778px;
+    margin: 0 auto;
+    padding: 0 10px;
+    overflow-x: hidden;
+}
+
+body {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    line-height: 150%;
+}
+
+.logo {
+    text-decoration: none;
+    color: rgb(11, 9, 94);
+    border-radius: 50%;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bdrs {
+    border-radius: 50%;
+}
+
+.what-smm {
+    margin-bottom: 40px;
+}
+
+.menu {
+    position: fixed;
+    display: flex;
+    right: 2px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: aliceblue;
+    z-index: 10;
+}
+
+.ov-hid {
+    overflow-y: hidden;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark {
+    background-color: rgb(39, 6, 60);
+    color: #fff;
+}
+
+.light-footer {
+    background-color: rgb(233, 215, 215);
+    color: #000;
+}
+
+.dark-footer {
+    background-color: rgb(54, 45, 45);
+    color: #fff;
+}
+
+.searches {
+    display: flex;
+    min-width: 120px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.menu-text {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.d-none {
+    display: none;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.d-header {
+    background-color: rgb(70, 62, 62);
+    position: fixed;
+    left: 0;
+    z-index: 5;
+    margin-bottom: 30px;
+}
+
+.bigImg {
+    width: 620px;
+    height: 350px;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    z-index: 5;
+    background-color: rgb(234, 210, 210);
+    margin-bottom: 30px;
+}
+
+.what-smm-text {
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.what-smm-long {
+    margin-bottom: 20px;
+}
+
+
+/* main */
+
+.main {
+    font-size: 17px;
+    padding-top: 50px;
+}
+
+p {
+    margin-top: 12px;
+}
+
+
+/* footer */
+
+.footer {
+    padding: 0;
+}
+
+.footer-logo {
+    color: #000;
+}
+
+.footer-head {
+    flex-wrap: wrap;
+}
+
+.footer-text {
+    color: #4d4d4d;
+    width: 350px;
+}
+
+
+/* media */
+
+.media {
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: aqua;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.border-img {
+    border-radius: 10px;
+    width: 600px;
+    height: 360px;
+}
+
+.tr-50 {
+    transform: translatex(50%) translateY(40px);
+}
+
+@media only screen and (min-width: 768px) {
+    .header,
+    .d-header {
+        position: relative;
+    }
+    .bi-moon,
+    .bi-brightness-high {
+        position: fixed;
+        top: 15px;
+        right: 32%;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        background: aqua;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .border-img {
+        width: 530px;
+        height: 360px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .bigImg {
+        width: 420px;
+        height: 250px;
+    }
+    .border-img {
+        width: 425px;
+        height: 260px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .border-img {
+        width: 375px;
+        height: 210px;
+    }
+    .wrap {
+        display: block;
+    }
+    .logo {
+        position: relative;
+        left: 40%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .border-img {
+        width: 320px;
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .bigImg {
+        width: 375px;
+        height: 200px;
+    }
+    .border-img {
+        width: 250px;
+        height: 130px;
+    }
+    body {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .bigImg {
+        width: 340px;
+        height: 170px;
+    }
+    .border-img {
+        width: 200px;
+        height: 100px;
+    }
+}
