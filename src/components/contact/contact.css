@@ -1,0 +1,19 @@
+.heading {
+    font-weight: 600;
+    color: brown;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.text-wrap {
+    display: flex;
+    text-overflow: clip;
+}
+
+.textarea {
+    height: 100px;
+}
